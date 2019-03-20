@@ -2,9 +2,14 @@ require 'sinatra/base'
 
 class Battle < Sinatra::Base
   
+  get "/" do
+    # "Testing infrastructure working!"
+    erb(:index)
+  end
 
-  get '/' do
-    "Testing infrastructure working!"
+  post "/names" do
+    params
+    erb(:play)
   end
 
   run! if app_file ==$0
@@ -13,5 +18,5 @@ end
 
 
 # To run (one or the other...)
-# ruby my_app.rb
+# ruby app.rb
 # rackup -p 4567
