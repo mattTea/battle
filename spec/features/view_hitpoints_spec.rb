@@ -3,7 +3,7 @@
 # I want to see Player 2's Hit Points
 
 describe "Hitpoints" do
-  it "displays player 1 hit points on the page" do
+  it "displays player 1 hit points" do
     sign_in_and_play
     expect(page).to have_content "Matt HP: 100"
   end
