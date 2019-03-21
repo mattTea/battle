@@ -6,6 +6,6 @@ describe "Attack player 2" do
   it "shows a confirmation when attacked" do
     sign_in_and_play
     click_link "attack"
-    expect(page).to have_content "Player 2 hit!"
+    expect(page).to have_content "Matt attacked Andy"
   end
 end
