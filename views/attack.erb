@@ -2,5 +2,6 @@
 
 <%= @game.not_turn.name + '\'s'%> hit points remaining: <%= @game.not_turn.hit_points%>
 
-
-<a href="/turn_switch">OK</a>
+<form action="/turn_switch" method="post">
+  <input type="submit" value="OK">
+</form>

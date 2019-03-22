@@ -18,7 +18,7 @@ describe Game do
 
   it 'inflicts damage to player' do
     expect(player2).to receive(:receive_damage)
-    subject.attack(player2)
+    subject.attack
   end
 
   it '#turn' do

@@ -14,8 +14,8 @@ class Game
     @player2
   end
 
-  def attack(player)
-    player.receive_damage
+  def attack
+    not_turn.receive_damage
   end
 
   def turn
