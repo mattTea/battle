@@ -20,4 +20,12 @@ describe Game do
     expect(player2).to receive(:receive_damage)
     subject.attack(player2)
   end
+
+  it '#turn' do
+    expect(game.turn).to eq player1
+  end
+
+  it '#switch_turns' do
+    expect(game.not_turn).to eq player2
+  end
 end

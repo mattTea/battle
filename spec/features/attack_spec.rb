@@ -8,4 +8,12 @@ describe "Attack player 2" do
     click_link "attack"
     expect(page).to have_content "Matt attacked Andy"
   end
+
+  it "shows a confirmation when attacked" do
+    sign_in_and_play
+    click_link "attack"
+    click_link "OK"
+    click_link "attack"
+    expect(page).to have_content "Andy attacked Matt"
+  end
 end

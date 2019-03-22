@@ -1,3 +1,6 @@
-<%= @game.player1.name%> attacked <%= @game.player2.name%>
+<%= @game.turn.name%> attacked <%= @game.not_turn.name%>
 
-<%= @game.player2.name + '\'s'%> hit points remaining: <%= @game.player2.hit_points%>
+<%= @game.not_turn.name + '\'s'%> hit points remaining: <%= @game.not_turn.hit_points%>
+
+
+<a href="/turn_switch">OK</a>
