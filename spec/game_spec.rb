@@ -14,11 +14,6 @@ describe Game do
     expect(game.player2).to eq player2
   end
 
-  # it 'inflicts damage to player' do
-  #   expect(player2).to receive(:receive_damage)
-  #   subject.attack
-  # end
-
   it '#turn' do
     expect(game.turn).to eq player1
   end

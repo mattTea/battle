@@ -2,6 +2,14 @@
 
 <%= @game.not_turn.name + '\'s'%> hit points remaining: <%= @game.not_turn.hit_points%>
 
-<form action="/turn_switch" method="post">
-  <input type="submit" value="OK">
-</form>
+<% if @game.not_turn.hit_points == 0 %>
+
+  <h4><%= @game.not_turn.name%> loses!</h4>
+
+<% else %>
+
+  <form action="/turn_switch" method="post">
+    <input type="submit" value="OK">
+  </form>
+
+<% end %>
