@@ -14,10 +14,6 @@ class Game
     @player2
   end
 
-  def attack
-    not_turn.receive_damage
-  end
-
   def turn
     @players.first
   end
