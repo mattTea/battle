@@ -1,13 +1,13 @@
 <div>
-  <%= "#{@player1} vs #{@player2}!" %>
+  <%= "#{@game.player1.name} vs #{@game.player2.name}!" %>
 </div>
 
 <div>
-  <%= "#{@player1} hit points: 100" %>
+  <%= "#{@game.player1.name} hit points: #{@game.player1.hit_points}" %>
 </div>
 
 <div>
-  <%= "#{@player2} hit points: 100" %>
+  <%= "#{@game.player2.name} hit points: #{@game.player2.hit_points}" %>
 </div>
 
 <div>

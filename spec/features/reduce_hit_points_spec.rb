@@ -6,6 +6,6 @@ describe "Reduce hit points" do
   it "reduces hit points by 10" do
     sign_in_and_play
     click_link "attack"
-    expect($player2.hit_points).to eq 90
+    expect($game.player2.hit_points).to eq 90
   end
 end
