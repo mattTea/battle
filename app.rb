@@ -33,7 +33,6 @@ class Battle < Sinatra::Base
 end
 
 
-
 # To run (one or the other...)
 # ruby app.rb
 # rackup -p 4567
