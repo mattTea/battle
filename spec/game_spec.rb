@@ -11,6 +11,4 @@ describe Game do
     expect(player).to receive(:receive_damage)
     subject.attack(player)
   end
-
-
 end
